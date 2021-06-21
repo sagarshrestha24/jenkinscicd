@@ -9,9 +9,9 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: bucketrepo
-      url: http://bucketrepo-jx.change.me/
+      url: http://bucketrepo-jx.172.20.255.251.nip.io/
     - name: hook
-      url: http://hook-jx.change.me/hook
+      url: http://hook-jx.172.20.255.251.nip.io/hook
     lastDeployed: "2021-06-21T07:08:50Z"
     name: jxboot-helmfile-resources
     repositoryName: jx3
@@ -20,14 +20,14 @@
     version: 1.0.60
   - apiVersion: v1
     appVersion: 1.7.0
-    applicationUrl: http://dashboard-jx.change.me
+    applicationUrl: http://dashboard-jx.172.20.255.251.nip.io
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
     firstDeployed: "2021-06-21T07:08:53Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
-      url: http://dashboard-jx.change.me
+      url: http://dashboard-jx.172.20.255.251.nip.io
     lastDeployed: "2021-06-21T07:08:53Z"
     name: jx-pipelines-visualizer
     repositoryName: jx3

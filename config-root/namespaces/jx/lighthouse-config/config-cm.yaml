@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - sagarshrestha24/jenkinscicd
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.172.20.255.251.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

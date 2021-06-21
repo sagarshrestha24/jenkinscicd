@@ -17,4 +17,4 @@ spec:
               serviceName: hook
               servicePort: 80
             path: "/hook"
-      host: hook-jx.change.me
+      host: hook-jx.172.20.255.251.nip.io
