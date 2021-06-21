@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        sagarshrestha24/cinode: true
         sagarshrestha24/jenkinscicd: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        sagarshrestha24/cinode: merge
         sagarshrestha24/jenkinscicd: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - sagarshrestha24/jenkinscicd
+        - sagarshrestha24/cinode
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - sagarshrestha24/jenkinscicd
+        - sagarshrestha24/cinode
       target_url: http://lighthouse-jx.172.20.255.251.nip.io/merge/status
 kind: ConfigMap
 metadata:
