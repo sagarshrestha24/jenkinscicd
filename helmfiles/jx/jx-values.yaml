@@ -33,6 +33,8 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: sagarshrestha24
+    repository: jenkinscicd
   - key: staging
   - key: production
   ingress:
@@ -44,6 +46,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: sagarshrestha24
   repository: bucketrepo
   secretStorage: local
   vault: {}
