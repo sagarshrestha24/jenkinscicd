@@ -6,6 +6,10 @@ data:
       repos:
       - sagarshrestha24/jenkinscicd
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - sagarshrestha24/cinode
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      sagarshrestha24/cinode:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       sagarshrestha24/jenkinscicd:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +35,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      sagarshrestha24/cinode:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       sagarshrestha24/jenkinscicd:
       - config-updater
       - approve
@@ -55,6 +80,11 @@ data:
     - repos:
       - sagarshrestha24/jenkinscicd
       trusted_org: todo
+    - repos:
+      - sagarshrestha24/cinode
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

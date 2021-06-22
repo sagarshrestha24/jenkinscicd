@@ -9,6 +9,9 @@ spec:
     providerKind: github
     repositories:
     - name: cinode
+    - name: finalcinode
+    - name: nodeappcidc
+    - name: pythonapp
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
