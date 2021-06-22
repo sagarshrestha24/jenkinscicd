@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: sagarshrestha24
+    provider: github
+    repository: nodeappcidc
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: sagarshrestha24-nodeappcidc
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/sagarshrestha24/nodeappcidc.git
+  org: sagarshrestha24
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodeappcidc
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/sagarshrestha24/nodeappcidc

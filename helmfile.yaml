@@ -1,17 +1,18 @@
 filepath: ""
 helmfiles:
 - path: helmfiles/jx/helmfile.yaml
-  environment: {}
 - path: helmfiles/kuberhealthy/helmfile.yaml
-  environment: {}
 - path: helmfiles/nginx/helmfile.yaml
-  environment: {}
 - path: helmfiles/tekton-pipelines/helmfile.yaml
-  environment: {}
 repositories:
 - name: kuberhealthy
   url: https://comcast.github.io/kuberhealthy/helm-repos
 releases:
 - chart: kuberhealthy/kuberhealthy
+  version: "64"
+  name: kuberhealthy
+  namespace: kuberhealthy
+  values:
+  - versionStream/charts/kuberhealthy/kuberhealthy/values.yaml.gotmpl
 templates: {}
-missingFileHandler: ""
+renderedvalues: {}

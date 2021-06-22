@@ -8,7 +8,10 @@ data:
     in_repo_config:
       enabled:
         sagarshrestha24/cinode: true
+        sagarshrestha24/finalcinode: true
         sagarshrestha24/jenkinscicd: true
+        sagarshrestha24/nodeappcidc: true
+        sagarshrestha24/pythonapp: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -21,7 +24,10 @@ data:
         skip-unknown-contexts: false
       merge_method:
         sagarshrestha24/cinode: merge
+        sagarshrestha24/finalcinode: merge
         sagarshrestha24/jenkinscicd: merge
+        sagarshrestha24/nodeappcidc: merge
+        sagarshrestha24/pythonapp: merge
       queries:
       - labels:
         - approved
@@ -34,6 +40,9 @@ data:
         repos:
         - sagarshrestha24/jenkinscicd
         - sagarshrestha24/cinode
+        - sagarshrestha24/finalcinode
+        - sagarshrestha24/nodeappcidc
+        - sagarshrestha24/pythonapp
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +54,9 @@ data:
         repos:
         - sagarshrestha24/jenkinscicd
         - sagarshrestha24/cinode
+        - sagarshrestha24/finalcinode
+        - sagarshrestha24/nodeappcidc
+        - sagarshrestha24/pythonapp
       target_url: http://lighthouse-jx.172.20.255.251.nip.io/merge/status
 kind: ConfigMap
 metadata:

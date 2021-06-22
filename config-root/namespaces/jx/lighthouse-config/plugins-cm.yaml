@@ -10,6 +10,18 @@ data:
       repos:
       - sagarshrestha24/cinode
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - sagarshrestha24/finalcinode
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - sagarshrestha24/nodeappcidc
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - sagarshrestha24/pythonapp
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -25,7 +37,22 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      sagarshrestha24/finalcinode:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       sagarshrestha24/jenkinscicd:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      sagarshrestha24/nodeappcidc:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      sagarshrestha24/pythonapp:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -36,6 +63,22 @@ data:
     owners: {}
     plugins:
       sagarshrestha24/cinode:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      sagarshrestha24/finalcinode:
       - approve
       - assign
       - blunderbuss
@@ -68,6 +111,38 @@ data:
       - cat
       - dog
       - pony
+      sagarshrestha24/nodeappcidc:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      sagarshrestha24/pythonapp:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -82,6 +157,15 @@ data:
       trusted_org: todo
     - repos:
       - sagarshrestha24/cinode
+      trusted_org: todo
+    - repos:
+      - sagarshrestha24/finalcinode
+      trusted_org: todo
+    - repos:
+      - sagarshrestha24/nodeappcidc
+      trusted_org: todo
+    - repos:
+      - sagarshrestha24/pythonapp
       trusted_org: todo
     welcome:
     - message_template: Welcome
